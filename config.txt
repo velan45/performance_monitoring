@@ -1,0 +1,24 @@
+cpu_times
+-->psutil.cpu_times(percpu=False)
+-->returns the attributes in seconds
+cpu_percent
+-->psutil.cpu_percent(interval=None, percpu=False)
+-->current system wide CPU utilization *interval value has to be set
+cpu_count
+-->psutil.cpu_count(logical=True)
+-->cpu count or physical cores if logical is set to false
+cpu_stats
+-->psutil.cpu_stats()
+-->returns cpu stats
+cpu_freq
+-->psutil.cpu_freq(percpu=False)
+-->returns cpu frequency 
+getloadavg
+-->psutil.getloadavg()
+-->Return the average system load over the last 1, 5 and 15 minutes as a tuple. 
+virtual_memory
+-->psutil.virtual_memory()
+-->Return statistics about system memory usage as a named tuple including the following fields, expressed in bytes.
+swap_memory
+-->psutil.swap_memory()
+-->Return system swap memory statistics as a named tuple including the following fields:
