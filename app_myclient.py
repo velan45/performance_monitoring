@@ -3,6 +3,7 @@ import socket
 import selectors
 import traceback
 import libclient
+import time
 from performance import Performance
 
 
@@ -32,7 +33,7 @@ sel.register(sock, events, data=message) #select register for asynchronous signa
 try:
     while True:
         events = sel.select(timeout=1)
-
+        time.sleep(1.0)
         message.request = my_comp_perf.performance_info()
         for key, mask in events:
             message = key.data
